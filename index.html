@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restowank</title>
+    <link rel="stylesheet" href="Assets/Styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RestoWank</h1>
+            <nav>
+                <ul>
+                    <li>Main Menu</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="menu-images">
+                <div class="image-container">
+                    <img src="Assets/Pictures/steak.jpeg" alt="Menu 1" data-description="Steak is a piece of meat that's cooked by grilling, frying, or broiling, often served as a main dish in meals." data-history="Steak is a dish made from meat, usually beef, cooked by grilling or frying, and its history can be described as 'People have been cooking and eating steak for a long time'." onclick="showImageDescription(this)">
+                    <div class="image-name">Steak</div>
+                </div>
+                <div class="image-container">
+                    <img src="Assets/Pictures/fries.jfif".jpg alt="Menu 2" data-description="Fries are thin slices of potatoes that are deep-fried until crispy and golden brown." data-history="Fries were made first in Belgium. They are slices of potatoes that are fried until crispy and golden brown." onclick="showImageDescription(this)">
+                    <div class="image-name">Fries</div>
+                </div>
+                <div class="image-container">
+                    <img src="Assets/Pictures/chimken.webp" alt="Menu 3" data-description="Fried chicken is chicken that has been coated in flour or batter and then deep-fried until it's crispy and golden brown." data-history="Fried chicken is a dish made by coating chicken pieces in flour or breadcrumbs and then frying them until they are crispy and golden brown." onclick="showImageDescription(this)">
+                    <div class="image-name">Fried Chicken</div>
+                </div>
+                <div class="image-container">
+                    <img src="Assets/Pictures/burger.jpg" alt="Menu 4" data-description="A burger is a sandwich made with a cooked patty of ground meat, usually beef, placed inside a sliced bun and often accompanied by various toppings such as lettuce, tomato, cheese, and condiments like ketchup or mayonnaise." data-history="The burger, a popular fast food, has a history that began with its invention in the United States during the late 19th or early 20th century, evolving from a simple meat patty placed between two slices of bread." onclick="showImageDescription(this)">
+                    <div class="image-name">Burger</div>
+                </div>
+            </div>
+        </main>
+        <div id="image-modal" class="modal">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img class="modal-content" id="modal-image">
+            <div id="image-description" class="image-description"></div>
+        </div>
+    </div>
+    <script src="Assets/JS/script.js"></script>
+</body>
+</html>
